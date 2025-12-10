@@ -3,7 +3,10 @@ function sayHello(){
     console.log("Hello, from Node JS");
 }
 sayHello();
-registeruser.checkforuseer()
-registeruser.registeruser()
-
-
+const isExisting=registeruser.checkforuseer()
+if(isExisting){
+    console.log("User already exists");
+}
+else{
+    registeruser.registeruser()
+}

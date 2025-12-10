@@ -3,6 +3,7 @@ function checkforuseer(){
 }
 function registeruser(){
     console.log("User registered successfully");
+    return false;
 }
 module.exports={
     checkforuseer:checkforuseer,
